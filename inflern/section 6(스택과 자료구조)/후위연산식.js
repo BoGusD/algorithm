@@ -17,9 +17,7 @@ solution = (str) => {
 
     console.log(stack);
   }
-
   answer = stack[0];
-
   return answer;
 };
 let a = "352+*9-";
