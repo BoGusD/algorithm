@@ -13,7 +13,7 @@ let n = 32;
 let a = [23, 87, 65, 12, 57, 32, 99, 81];
 console.log(solution(n, a));
 
-// 이분 검색으로 찾기 log2O(n)
+// 이분 검색으로 찾기 log2 O(n)
 solution = (target, arr) => {
   let answer;
   arr.sort((a, b) => a - b);
