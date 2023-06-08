@@ -1,28 +1,33 @@
 count = (arr, dist) => {
   let cnt = 1;
-  endPoint = arr[0];
+  let endPoint = arr[0];
   for (let i = 1; i < arr.length; i++) {
-    if (arr[i] - ep >= dist) {
+    if (arr[i] - endPoint >= dist) {
       cnt++;
-      ep = arr[i];
+      endPoint = arr[i];
     }
   }
   return cnt;
 };
+
 solution = (c, arr) => {
-  let answer = arr.sort((a, b) => a - b);
-  let lt = 1;
-  let rt = arr[arr.length - 1];
-  while (lt <= rt) {
-    let mid = parseInt((lt + rt) / 2);
-    if (count(arr, mid) >= c) {
+  let answer = 0;
+  let sortedArr = arr.sort((a, b) => a - b);
+  let left = 1;
+  let right = sortedArr[sortedArr.length - 1] - sortedArr[0];
+  while (left <= right) {
+    let mid = parseInt((left + right) / 2);
+    if (count(sortedArr, mid) >= c) {
       answer = mid;
-      lt = mid + 1;
+      left = mid + 1;
     } else {
-      rt = mid - 1;
+      right = mid - 1;
     }
   }
+  return answer;
 };
 
-let a = [1, 2, 8, 4, 9];
-console.log(solution(3, a));
+let n = 5;
+let c = 3;
+let arr = [1, 2, 8, 4, 9];
+console.log(solution(c, arr)); // 출력: 7
