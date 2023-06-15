@@ -10,6 +10,7 @@ solution = (v) => {
       //   DFS(v * 2 + 1);
       //  중위 순회
       DFS(v * 2);
+      console.log("v", v);
       answer += v + " ";
       console.log("answer", answer);
       DFS(v * 2 + 1);
