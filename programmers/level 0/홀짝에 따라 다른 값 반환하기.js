@@ -1,5 +1,6 @@
+// https://school.programmers.co.kr/learn/courses/30/lessons/181935
+
 solution = (n) => {
-  // https://school.programmers.co.kr/learn/courses/30/lessons/181935
   let answer = 0;
   if (n % 2 != 0) {
     for (let i = 0; i <= n; i++) {
