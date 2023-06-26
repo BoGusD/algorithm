@@ -1,3 +1,5 @@
+//https://school.programmers.co.kr/learn/courses/30/lessons/181928
+
 solution = (num_list) => {
   let odd = "",
     even = "";
@@ -7,5 +9,3 @@ solution = (num_list) => {
   }
   return parseInt(odd) + parseInt(even);
 };
-
-console.log(solution([3, 4, 5, 2, 1]));

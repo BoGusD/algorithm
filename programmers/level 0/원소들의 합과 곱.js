@@ -1,3 +1,5 @@
+//https://school.programmers.co.kr/learn/courses/30/lessons/181929
+
 solution = (num_list) => {
   const point = num_list.reduce((a, b) => a + b) ** 2;
   const answer = num_list.reduce((a, b) => a * b);

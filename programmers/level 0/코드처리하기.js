@@ -1,4 +1,5 @@
 //https://school.programmers.co.kr/learn/courses/30/lessons/181932
+
 solution = (code) => {
   let ret = "";
   let mode = 0;
